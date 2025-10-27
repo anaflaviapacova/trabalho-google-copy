@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pesquisa Avançada</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    background: #fff;
+    color: #202124;
+  }
+  h1 {
+    color: #4285F4;
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  form {
+    max-width: 700px;
+  }
+  .campo {
+    margin-bottom: 20px;
+  }
+  label {
+    display: block;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 6px;
+  }
+  input[type="text"] {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #dfe1e5;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  input[type="submit"] {
+    background: #4285F4;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  input[type="submit"]:hover {
+    background: #3367D6;
+  }
+  a.voltar {
+    display: inline-block;
+    margin-top: 20px;
+    color: #4285F4;
+    text-decoration: none;
+  }
+  a.voltar:hover {
+    text-decoration: underline;
+  }
+</style>
+</head>
+<body>
+
+  <h1>Pesquisa Avançada</h1>
+
+  <form action="https://www.google.com/search" method="GET" target="_blank">
+    <div class="campo">
+      <label for="todas">Todas estas palavras:</label>
+      <input type="text" id="todas" name="as_q">
+    </div>
+
+    <div class="campo">
+      <label for="exata">Esta expressão ou frase exata:</label>
+      <input type="text" id="exata" name="as_epq">
+    </div>
+
+    <div class="campo">
+      <label for="qualquer">Qualquer destas palavras:</label>
+      <input type="text" id="qualquer" name="as_oq">
+    </div>
+
+    <div class="campo">
+      <label for="nenhuma">Nenhuma destas palavras:</label>
+      <input type="text" id="nenhuma" name="as_eq">
+    </div>
+
+    <input type="submit" value="Pesquisar Avançado">
+  </form>
+
+  <a href="index.html" class="voltar">⬅ Voltar para a busca principal</a>
+
+</body>
+</html>
